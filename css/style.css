@@ -12,7 +12,6 @@ body {
 
 .col-4 {
     border: yellow 2px solid;
-    height: 600px;
 }
 
 .col-8 {
@@ -42,9 +41,6 @@ body {
 /* Utilities */
 
 .circle {
-    height: 40px;
-    width: 40px;
-    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     overflow: hidden;
@@ -54,7 +50,7 @@ body {
 /* ------------------------------------------------ */
 
 
-/* COLORS */
+/* BACKGROUND - COLORS */
 
 .bgc-haders-grey {
     background-color: #eaeaea;
@@ -64,8 +60,28 @@ body {
     background-color: #f3eeea;
 }
 
+.bgc-notify {
+    background-color: #8edafc;
+}
+
+.c-notify {
+    color: #8edafc;
+}
+
+.bgc-white {
+    background-color: white;
+}
+
 
 /* section 2 */
+
+.header-main {
+    height: 65px;
+}
+
+.img-header {
+    height: 55px;
+}
 
 .background-container {
     background-image: url(../img/mine.jpg);
