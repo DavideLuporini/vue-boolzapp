@@ -8,7 +8,24 @@ body {
     height: 500px;
 }
 
-[class*="col-"] {
+.col-4 {
     border: yellow 2px solid;
     height: 500px;
+}
+
+.col-8 {
+    border: yellow 2px solid;
+    height: 500px;
+}
+
+.col {
+    border: solid 2px red;
+}
+
+.col-2 {
+    border: solid 2px red;
+}
+
+.col-12 {
+    border: solid 2px red;
 }
