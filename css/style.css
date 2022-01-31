@@ -50,6 +50,7 @@ body {
 
 #contacts {
     overflow-y: scroll;
+    max-height: 350px;
 }
 
 
