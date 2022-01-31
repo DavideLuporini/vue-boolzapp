@@ -5,17 +5,16 @@ body {
 
 .container {
     border: 2px solid blue;
-    height: 500px;
 }
 
 .col-4 {
     border: yellow 2px solid;
-    height: 500px;
+    height: 600px;
 }
 
 .col-8 {
     border: yellow 2px solid;
-    height: 500px;
+    height: 600px;
 }
 
 .col {
