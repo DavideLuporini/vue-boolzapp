@@ -16,17 +16,17 @@ var app = new Vue({
             {
                 name: 'Fabio',
                 avatar: '_2',
-                message: 'butta la pasta',
+                message: 'sono incinto',
             },
             {
                 name: 'Samuele',
                 avatar: '_3',
-                message: 'butta la pasta',
+                message: 'ti va di uscire con me?',
             },
             {
                 name: 'Luisa',
                 avatar: '_4',
-                message: 'butta la pasta',
+                message: 'da oggi sono luiso',
             },
         ],
 

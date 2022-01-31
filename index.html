@@ -73,8 +73,8 @@
                                     <img class="img-fluid userpic" :src="'img/avatar' + contact.avatar + '.jpg'" alt="">
                                 </div>
                                 <div class="col-6 d-flex flex-column">
-                                    <p class="fw-bold ps-3 fs-5 align-self-start">{{contact.name}}</p>
-                                    <p class=" ps-3  align-self-start">{{contact.message}}</p>
+                                    <span class="fw-bold ps-3 fs-5 align-self-start">{{contact.name}}</span>
+                                    <span class=" ps-3  align-self-start">{{contact.message}}</span>
                                 </div>
                             </div>
                         </section>
@@ -114,13 +114,15 @@
                             <div class="col-12 flex-grow-1">
                                 <div class="container mx-auto ">
                                     <div class="row justify-content-end">
-                                        <div id="message-sent" class="col-4 bgc-notify">
-                                            dasdsadasdasdsad
+                                        <div class="message-sent col-4 bgc-notify d-flex flex-column">
+                                            <div class="message-text">una volta ho visto un clown</div>
+                                            <span class="date-sent align-self-end">15:00</span>
                                         </div>
                                     </div>
                                     <div class="row justify-content-start">
-                                        <div id="message-received" class="col-4 bgc-notify">
-                                            dasdsadasdasdsad
+                                        <div class="message-received col-4 bgc-notify d-flex flex-column">
+                                            <div class="message-text">una volta ho visto un clown</div>
+                                            <span class="date-received align-self-end">15:00</span>
                                         </div>
                                     </div>
                                 </div>
