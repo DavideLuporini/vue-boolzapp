@@ -28,3 +28,44 @@ body {
 .col-12 {
     border: solid 2px red;
 }
+
+
+/* ------------------------------------------------ */
+
+
+/* Utilities */
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+img {}
+
+
+/* ------------------------------------------------ */
+
+
+/* COLORS */
+
+.bgc-haders-grey {
+    background-color: #eaeaea;
+}
+
+.bgc-footer-grey {
+    background-color: #f3eeea;
+}
+
+
+/* section 2 */
+
+.background-container {
+    background-image: url(../img/mine.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
