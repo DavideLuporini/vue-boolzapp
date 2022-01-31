@@ -7,6 +7,9 @@ body {
     border: 2px solid blue;
 }
 
+
+/* TODO ELIMINARE QUESTI PEZZI */
+
 .col-4 {
     border: yellow 2px solid;
     height: 600px;
@@ -30,6 +33,9 @@ body {
 }
 
 
+/* todo END */
+
+
 /* ------------------------------------------------ */
 
 
@@ -43,8 +49,6 @@ body {
     display: inline-block;
     overflow: hidden;
 }
-
-img {}
 
 
 /* ------------------------------------------------ */
