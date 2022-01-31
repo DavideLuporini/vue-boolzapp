@@ -23,28 +23,23 @@
                     <!-- header con utente -->
 
                     <div class="col-4 d-flex flex-column ">
-                        <div class="col-12 ">
-                            <div class="d-flex bd-highlight bgc-haders-grey justify-content-between">
-                                <div class="col-4 d-flex">
-                                    <div class="col-6 ">
-                                        <div class=" bd-highlight  circle">
-                                            <img src="img/avatar_1.jpg" alt="userpic" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center">
-                                        <div class="text-capitalize">nome utente</div>
+                        <section class="row bgc-haders-grey justify-content-between">
+                            <div class="col-4 d-flex">
+                                <div class="col-6 ">
+                                    <div class=" bd-highlight  circle">
+                                        <img src="img/avatar_1.jpg" alt="userpic" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center justify-content-end">
-
-                                    <div class="p-2 bd-highlight inline-flex"><i class="fas fa-circle-notch"></i></div>
-                                    <div class="p-2 bd-highlight inline-flex"><i class="fas fa-comment-alt"></i></div>
-                                    <div class="p-2 bd-highlight inline-flex"><i class="fas fa-ellipsis-v"></i></div>
+                                <div class="col-6 d-flex align-items-center">
+                                    <div class="text-capitalize">nome utente</div>
                                 </div>
-
                             </div>
-                        </div>
-
+                            <div class="col-6 d-flex align-items-center justify-content-end">
+                                <div class="p-2 bd-highlight inline-flex"><i class="fas fa-circle-notch"></i></div>
+                                <div class="p-2 bd-highlight inline-flex"><i class="fas fa-comment-alt"></i></div>
+                                <div class="p-2 bd-highlight inline-flex"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </section>
 
                         <!-- barra notifiche -->
                         <section class="row bgc-notify">
@@ -69,17 +64,38 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="row flex-grow-1">
-                            <div class="col-12 flex-grow-1"></div>
+
+
+                        <!-- chat -->
+                        <section id="contacts" class="row flex-column">
+                            <div class="col-12 d-flex align-items-center py-2">
+                                <div class="user circle">
+                                    <img class="img-fluid userpic" src="img/avatar_2.jpg" alt="">
+                                </div>
+                                <p class="fw-bold ps-3 fs-5 align-self-start">nome</p>
+                            </div>
+                            <div class="col-12 d-flex align-items-center py-2">
+                                <div class="user">
+                                    <img class="img-fluid userpic" src="img/avatar_2.jpg" alt="">
+                                </div>
+                                <p class="fw-bold ps-3 fs-5 align-self-start">nome</p>
+                            </div>
+                            <div class="col-12 d-flex align-items-center py-2">
+                                <div class="user">
+                                    <img class="img-fluid userpic" src="img/avatar_2.jpg" alt="">
+                                </div>
+                                <p class="fw-bold ps-3 fs-5 align-self-start">nome</p>
+                            </div>
                         </section>
+
                     </div>
 
                     <!-- corpo messaggi : header contatto + corpo messaggi (+ messaggi ) -->
-                    <div class="col-8 d-flex flex-column">
+                    <div class="col-8 d-flex flex-column ">
                         <!-- header -->
-                        <section class="row flex-grow-1">
+                        <section class="row bgc-haders-grey">
                             <div class="col-12 ">
-                                <div class="d-flex  bgc-haders-grey justify-content-between header-main">
+                                <div class="d-flex   justify-content-between header-main">
                                     <div class="col-4 d-flex align-items-center">
                                         <div class=" bd-highlight  circle ">
                                             <img src="img/avatar_1.jpg" alt="userpic" class="img-fluid img-header">
@@ -97,9 +113,11 @@
                                 </div>
                             </div>
                         </section>
+
+
                         <!-- corpo messaggi -->
-                        <section class="row">
-                            <div class="col-12 flex-grow-1 background-container"></div>
+                        <section id="messages-area" class="row flex-grow-1">
+                            <div class="col-12 flex-grow-1"></div>
                         </section>
 
                         <!-- footer (invio messaggi + icone)-->

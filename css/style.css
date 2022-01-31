@@ -3,37 +3,6 @@ body {
     background: linear-gradient( rgb(13, 116, 2) 20%, rgb(193, 255, 162) 20%);
 }
 
-.container {
-    border: 2px solid blue;
-}
-
-
-/* TODO ELIMINARE QUESTI PEZZI */
-
-.col-4 {
-    border: yellow 2px solid;
-}
-
-.col-8 {
-    border: yellow 2px solid;
-    height: 600px;
-}
-
-.col {
-    border: solid 2px red;
-}
-
-.col-2 {
-    border: solid 2px red;
-}
-
-.col-12 {
-    border: solid 2px red;
-}
-
-
-/* todo END */
-
 
 /* ------------------------------------------------ */
 
@@ -44,6 +13,10 @@ body {
     border-radius: 50%;
     display: inline-block;
     overflow: hidden;
+}
+
+.userpic {
+    height: 60px;
 }
 
 
@@ -73,7 +46,14 @@ body {
 }
 
 
-/* section 2 */
+/* navbar */
+
+#contacts {
+    overflow-y: scroll;
+}
+
+
+/* chats */
 
 .header-main {
     height: 65px;
@@ -83,7 +63,7 @@ body {
     height: 55px;
 }
 
-.background-container {
+#messages-area {
     background-image: url(../img/mine.jpg);
     background-position: center;
     background-repeat: no-repeat;
