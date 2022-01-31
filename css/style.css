@@ -48,7 +48,7 @@ body {
 
 /* navbar */
 
-#contacts {
+#contactss {
     overflow-y: scroll;
     max-height: 350px;
 }
@@ -69,4 +69,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* messages */
+
+#message-received {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#message-sent {
+    background-color: #d5f9ba;
+    padding: 10px;
 }
