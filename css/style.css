@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    background: linear-gradient( rgb(13, 116, 2) 20%, rgb(193, 255, 162) 20%);
+}
+
+.container {
+    border: 2px solid blue;
+    height: 500px;
+}
+
+[class*="col-"] {
+    border: yellow 2px solid;
+    height: 500px;
+}
