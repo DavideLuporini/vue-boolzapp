@@ -217,7 +217,17 @@ var app = new Vue({
                 this.contacts[this.currentContact].messages.push(newMessageObject);
             }
             this.newMessage = '';
+
+            setTimeout(() => {
+                const answer = {
+                    date: this.getDate(),
+                    text: "Ok",
+                    status: "received",
+                };
+                this.contacts[this.currentContact].messages.push(answer);
+            }, 3000);
         },
+
     },
 
 })

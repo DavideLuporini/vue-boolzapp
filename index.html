@@ -110,8 +110,8 @@
 
 
                         <!-- corpo messaggi -->
-                        <section id="messages-area" class="row flex-grow-1 py-3">
-                            <div class="col-12 flex-grow-1">
+                        <section id="messages-area" class="row flex-grow-1 py-3 m-h">
+                            <div class="col-12 flex-grow-1 m-h">
                                 <div class="container mx-auto ">
                                     <div v-for='(message ,index) in contacts[currentContact].messages' class="row" :class='message.status'>
                                         <div :class="message.status==='sent' ? 'message-sent' : 'message-received' " class="  col-4 bgc-notify d-flex flex-column rounded-3 mb-3">
