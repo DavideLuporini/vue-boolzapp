@@ -115,5 +115,6 @@ body {
 }
 
 .active {
-    border: black 2px solid;
+    border: rgba(46, 41, 41, 0.45) 2px solid 2px;
+    background-color: rgb(128, 127, 127);
 }
