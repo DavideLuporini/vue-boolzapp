@@ -1,3 +1,9 @@
+/* generals */
+
+main {
+    height: 90vh;
+}
+
 body {
     height: 100vh;
     background: linear-gradient( rgba(0, 150, 136, 255) 20%, rgba(215, 219, 216, 255) 20%);
@@ -16,11 +22,8 @@ body {
 }
 
 .userpic {
-    height: 60px;
+    height: 45px;
 }
-
-
-/* ------------------------------------------------ */
 
 
 /* BACKGROUND - COLORS */
@@ -53,28 +56,30 @@ body {
     background-color: white;
 }
 
+
+/* font size */
+
 .fs-12px {
     font-size: 12px;
 }
 
+.m-h {
+    max-height: 515px;
+}
 
-/* navbar */
 
-#contactss {
-    overflow-y: scroll;
+/* ------------------------------------------------ */
+
+
+/* #contacs */
+
+#contacts {
+    overflow-y: auto;
     height: 450px;
 }
 
 
 /* chats */
-
-.header-main {
-    height: 65px;
-}
-
-.img-header {
-    height: 55px;
-}
 
 #messages-area {
     background-image: url(../img/mine.jpg);
@@ -82,10 +87,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: auto;
-}
-
-.m-h {
-    max-height: 515px;
 }
 
 
@@ -115,6 +116,30 @@ body {
 }
 
 .active {
-    border: rgba(46, 41, 41, 0.45) 2px solid 2px;
-    background-color: rgb(128, 127, 127);
+    background-color: rgba(39, 39, 39, 0.123);
+}
+
+
+/*icon hovers */
+
+#contacts .circle:hover {
+    filter: drop-shadow(0px 0px 1px rgba(109, 108, 108, 0.409))
+}
+
+[class*='fa']:hover {
+    filter: brightness(0.3);
+}
+
+#user-info [class*='fa']:hover {
+    filter: brightness(3);
+}
+
+#notify-bar .circle:hover {
+    filter: drop-shadow(0px 0px 2px rgba(17, 20, 192, 0.409));
+    background-color: rgba(17, 20, 192, 0.409);
+}
+
+#bell:hover {
+    filter: brightness(1);
+    color: #8edafc;
 }

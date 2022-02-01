@@ -18,16 +18,16 @@
         <main class="pt-5">
             <div class="container">
                 <div class="row">
+
                     <!-- sidebar : header con utente + sezione notifice+ contatti + filtro ricerca -->
-
-
-                    <!-- header con utente -->
                     <div class="col-4 d-flex flex-column ">
-                        <section class="row bgc-haders-grey justify-content-between">
+
+                        <!-- User info -->
+                        <section id="user-info" class="row bgc-haders-grey justify-content-between">
                             <div class="col-4 d-flex">
                                 <div class="col-6 ">
                                     <div class=" bd-highlight  circle">
-                                        <img src="img/avatar_1.jpg" alt="userpic" class="img-fluid">
+                                        <img src="img/avatar_1.jpg" alt="userpic" class="img-fluid userpic">
                                     </div>
                                 </div>
                                 <div class="col-6 d-flex align-items-center flex-column align-self-center">
@@ -42,9 +42,9 @@
                         </section>
 
                         <!-- barra notifiche -->
-                        <section class="row bgc-notify">
+                        <section id="notify-bar" class="row bgc-notify">
                             <div class="col-12 d-flex align-items-center">
-                                <div class="d-inline-block d-flex align-items-center justify-content-center  circle p-3 m-2 bgc-white"><i class="fas fa-bell-slash c-notify"></i>
+                                <div class="d-inline-block d-flex align-items-center justify-content-center  circle p-3 m-2 bgc-white"><i id="bell" class="fas fa-bell-slash c-notify"></i>
                                 </div>
                                 <div class="ps-3 ">
                                     <p class="m-0 fw-bold">Ricevi notifiche di nuovi messaggi</p>
@@ -54,7 +54,7 @@
                         </section>
 
                         <!-- barra di ricerca -->
-                        <section class="row bgc-white">
+                        <section id="search-bar" class="row bgc-white">
                             <div class="col-12 ">
                                 <div class="input-group flex-nowrap py-2 ">
                                     <span class="input-group-text bgc-white"><i class="fas fa-search"></i></span>
@@ -63,15 +63,15 @@
                             </div>
                         </section>
 
-                        <!-- chat -->
-                        <section id="contactss" class="row bgc-white">
+                        <!-- Contatti -->
+                        <section id="contacts" class="row bgc-white">
                             <div v-for="(contact, index) in contacts" class="col-12 d-flex align-items-center py-2" @click="actualContact(index)" :class="{active: isActive(index)}">
                                 <div class="user circle">
                                     <img alt="userpic" :src="'img/avatar' + contact.avatar + '.jpg'" class="img-fluid userpic">
                                 </div>
                                 <div class="col-6 d-flex flex-column">
                                     <span class="fw-bold ps-3 fs-5 align-self-start">{{contact.name}}</span>
-                                    <span class=" ps-3  align-self-start">{{contact.message}}</span>
+                                    <span class=" ps-3  ">{{contact.message}}</span>
                                 </div>
                             </div>
                         </section>
@@ -83,7 +83,8 @@
                     <div class="col-8 d-flex flex-column ">
 
                         <!-- header -->
-                        <section class="row bgc-haders-grey">
+                        <!-- informazioni contatto -->
+                        <section id="contact-info" class="row bgc-haders-grey">
                             <div class="col-12 ">
                                 <div class="d-flex   justify-content-between header-main">
                                     <div v-for="(contact,index) in contacts" class="col d-flex align-items-center" v-if="isActive(index)">
@@ -124,7 +125,7 @@
 
 
                         <!-- footer (invio messaggi + icone)-->
-                        <section class="row ">
+                        <section id="text-input" class="row ">
                             <nav class="navbar bgc-footer-grey ">
                                 <div class="container-fluid d-flex text-end ">
                                     <div class="col d-flex justify-content-center flex-grow-0 ">
