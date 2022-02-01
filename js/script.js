@@ -5,6 +5,7 @@ var app = new Vue({
     data: {
 
         currentContact: 0,
+        newMessage: '',
 
         user: {
             name: 'Davide',
@@ -204,6 +205,18 @@ var app = new Vue({
             const minutes = new Date().getMinutes();
             const currentTime = `${hours}:${minutes}`;
             return currentTime;
+        },
+        sendMessage() {
+            const newMessage = this.newMessage.trim();
+            if (newMessage) {
+                const newMessageObject = {
+                    date: this.getDate(),
+                    text: newMessage,
+                    status: 'sent'
+                }
+                this.contacts[this.currentContact].messages.push(newMessageObject);
+            }
+            this.newMessage = '';
         },
     },
 
