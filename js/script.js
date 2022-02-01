@@ -189,12 +189,9 @@ var app = new Vue({
         ],
     },
     methods: {
-        isActive(index) {
-            return index === this.currentContact
-        },
-        actualContact(index) {
-            this.currentContact = index;
-        },
+
+
+        // # methods to determinate Time
 
         getDate() {
             const currentDate = new Date().toLocaleDateString();
@@ -206,6 +203,16 @@ var app = new Vue({
             const currentTime = `${hours}:${minutes}`;
             return currentTime;
         },
+
+        // Methods for interactions
+
+        isActive(index) {
+            return index === this.currentContact
+        },
+        actualContact(index) {
+            this.currentContact = index;
+        },
+
         sendMessage() {
             const newMessage = this.newMessage.trim();
             if (newMessage) {
@@ -219,12 +226,14 @@ var app = new Vue({
             this.newMessage = '';
 
             setTimeout(() => {
+
                 const answer = {
                     date: this.getDate(),
                     text: "Ok",
                     status: "received",
                 };
                 this.contacts[this.currentContact].messages.push(answer);
+
             }, 3000);
         },
 

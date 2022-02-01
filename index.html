@@ -72,7 +72,6 @@
                                 <div class="col-6 d-flex flex-column">
                                     <span class="fw-bold ps-3 fs-5 align-self-start">{{contact.name}}</span>
                                     <span class=" ps-3  align-self-start">{{contact.message}}</span>
-                                    <span class=" ps-3  align-self-start">{{getHour()}}</span>
                                 </div>
                             </div>
                         </section>
@@ -116,7 +115,7 @@
                                     <div v-for='(message ,index) in contacts[currentContact].messages' class="row" :class='message.status'>
                                         <div :class="message.status==='sent' ? 'message-sent' : 'message-received' " class="  col-4 bgc-notify d-flex flex-column rounded-3 mb-3">
                                             <div class="message-text ">{{message.text}}</div>
-                                            <span class="date align-self-end ">{{getHour()}}</span>
+                                            <span class="date align-self-end ">{{message.date}}</span>
                                         </div>
                                     </div>
                                 </div>
