@@ -64,7 +64,6 @@
                             </div>
                         </section>
 
-                        <!-- ! inserire onclick sui div della chat -->
                         <!-- chat -->
                         <section id="contactss" class="row bgc-white">
                             <div v-for="(contact, index) in contacts" class="col-12 d-flex align-items-center py-2" @click="actualContact(index)" :class="{active: isActive(index)}">
@@ -114,16 +113,10 @@
                         <section id="messages-area" class="row flex-grow-1 py-3">
                             <div class="col-12 flex-grow-1">
                                 <div class="container mx-auto ">
-                                    <div class="row justify-content-end">
-                                        <div class="message-sent col-4 bgc-notify d-flex flex-column rounded-3">
-                                            <div class="message-text">una volta ho visto un clown</div>
-                                            <span class="date-sent align-self-end">{{getHour()}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="row justify-content-start">
-                                        <div class="message-received col-4 bgc-notify d-flex flex-column rounded-3">
-                                            <div class="message-text">una volta ho visto un clown</div>
-                                            <span class="date-received align-self-end">{{getHour()}}</span>
+                                    <div v-for='(message ,index) in contacts[currentContact].messages' class="row justify-content-end">
+                                        <div class=" message-sent col-4 bgc-notify d-flex flex-column rounded-3 mb-3">
+                                            <div class="message-text ">{{message.text}}</div>
+                                            <span class="date-sent align-self-end ">{{getHour()}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -131,17 +124,17 @@
                         </section>
 
                         <!-- footer (invio messaggi + icone)-->
-                        <section class="row">
-                            <nav class="navbar bgc-footer-grey">
-                                <div class="container-fluid d-flex text-end">
-                                    <div class="col d-flex justify-content-center  flex-grow-0">
-                                        <a class="navbar-brand"><i class="far fa-smile c-icons-darkgrey"></i></a>
+                        <section class="row ">
+                            <nav class="navbar bgc-footer-grey ">
+                                <div class="container-fluid d-flex text-end ">
+                                    <div class="col d-flex justify-content-center flex-grow-0 ">
+                                        <a class="navbar-brand "><i class="far fa-smile c-icons-darkgrey "></i></a>
                                     </div>
-                                    <div class="col flex-grow-1">
-                                        <input class="form-control me-2" type="search" placeholder="Scrivi un messaggio..." aria-label="Search">
+                                    <div class="col flex-grow-1 ">
+                                        <input class="form-control me-2 " type="search " placeholder="Scrivi un messaggio... " aria-label="Search ">
                                     </div>
-                                    <div class="col d-flex justify-content-center flex-grow-0">
-                                        <a class="navbar-brand ms-4"><i class="fas fa-microphone c-icons-darkgrey"></i></i></a>
+                                    <div class="col d-flex justify-content-center flex-grow-0 ">
+                                        <a class="navbar-brand ms-4 "><i class="fas fa-microphone c-icons-darkgrey "></i></i></a>
                                     </div>
                                 </div>
                             </nav>
@@ -157,7 +150,7 @@
     </div>
 
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js "></script>
 </body>
 
 </html>
