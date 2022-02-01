@@ -41,6 +41,14 @@ body {
     color: #8edafc;
 }
 
+.c-icons-grey {
+    color: #b4b4b4;
+}
+
+.c-icons-darkgrey {
+    color: #6b7376;
+}
+
 .bgc-white {
     background-color: white;
 }

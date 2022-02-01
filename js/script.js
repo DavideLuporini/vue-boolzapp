@@ -29,6 +29,21 @@ var app = new Vue({
                 avatar: '_4',
                 message: 'da oggi sono Giorgio',
             },
+            {
+                name: 'Giorgia',
+                avatar: '_4',
+                message: 'da oggi sono Giorgio',
+            },
+            {
+                name: 'Giorgia',
+                avatar: '_4',
+                message: 'da oggi sono Giorgio',
+            },
+            {
+                name: 'Giorgia',
+                avatar: '_4',
+                message: 'da oggi sono Giorgio',
+            },
         ],
     },
     methods: {
