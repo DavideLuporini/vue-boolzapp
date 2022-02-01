@@ -45,12 +45,16 @@ body {
     background-color: white;
 }
 
+.fs-12px {
+    font-size: 12px;
+}
+
 
 /* navbar */
 
 #contactss {
     overflow-y: scroll;
-    max-height: 350px;
+    height: 450px;
 }
 
 
