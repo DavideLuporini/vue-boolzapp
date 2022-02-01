@@ -202,8 +202,7 @@ var app = new Vue({
         getHour() {
             const hours = new Date().getHours();
             const minutes = new Date().getMinutes();
-            const seconds = new Date().getSeconds();
-            const currentTime = `${hours}:${minutes}:${seconds}`;
+            const currentTime = `${hours}:${minutes}`;
             return currentTime;
         },
     },
