@@ -1,11 +1,14 @@
 console.log('hi')
 
+
+
 var app = new Vue({
     el: '#app',
     data: {
 
         currentContact: 0,
         newMessage: '',
+        search: '',
 
         user: {
             name: 'Davide',
@@ -236,6 +239,7 @@ var app = new Vue({
 
             }, 3000);
         },
+
 
     },
 
