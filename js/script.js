@@ -245,7 +245,16 @@ var app = new Vue({
             filteredContacts = [];
             const search = this.search.toLowerCase();
             filteredContacts.push(search)
-            console.log(search)
+
+            this.contacts.forEach((element) => {
+                element.visible = false;
+                const string = element.name.toLowerCase();
+
+                if (filteredContacts.every((item) => string.includes(item))) {
+                    element.visible = true;
+                }
+            });
+
         },
 
     },
