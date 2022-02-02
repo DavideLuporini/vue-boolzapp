@@ -67,7 +67,7 @@
                         </section>
 
                         <!-- Contatti -->
-                        <section @click="lastMessage()" id="contacts" class="row bgc-white align-content-start">
+                        <section id="contacts" class="row bgc-white align-content-start">
                             <div v-for="(contact, index) in contacts" class="col-12 d-flex align-items-center py-2" @click="actualContact(index)" :class="{active: isActive(index)}" v-if="contact.visible">
                                 <div class="user circle">
                                     <img alt="userpic" :src="'img/avatar' + contact.avatar + '.jpg'" class="img-fluid userpic">
@@ -128,7 +128,7 @@
                                                     <li>info</li>
                                                 </ul> -->
                                             </div>
-                                            <div @click="lastMessage()" class="message-text ">{{message.text}}</div>
+                                            <div class="message-text ">{{message.text}}</div>
                                             <span class="date align-self-end ">{{message.date}}</span>
                                         </div>
                                     </div>
