@@ -242,9 +242,10 @@ var app = new Vue({
 
         //    filtro alla ricerca
         searchContact() {
+            filteredContacts = [];
             const search = this.search.toLowerCase();
+            filteredContacts.push(search)
             console.log(search)
-
         },
 
     },
