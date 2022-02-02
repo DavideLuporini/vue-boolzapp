@@ -1,6 +1,6 @@
 console.log('hi')
 
-
+dayjs.extend(dayjs_plugin_customParseFormat);
 
 var app = new Vue({
     el: '#app',
@@ -78,8 +78,8 @@ var app = new Vue({
                 ],
             },
             {
-                name: 'Luisa',
-                avatar: '_4',
+                name: 'Ambrogio',
+                avatar: '_5',
                 visible: true,
                 messages: [{
                         date: '10/01/2020 15:30:55',
@@ -94,8 +94,8 @@ var app = new Vue({
                 ],
             },
             {
-                name: 'Luisa',
-                avatar: '_4',
+                name: 'Sara',
+                avatar: '_6',
                 visible: true,
                 messages: [{
                         date: '10/01/2020 15:30:55',
@@ -110,8 +110,8 @@ var app = new Vue({
                 ],
             },
             {
-                name: 'Luisa',
-                avatar: '_4',
+                name: 'Luigi',
+                avatar: '_7',
                 visible: true,
                 messages: [{
                         date: '10/01/2020 15:30:55',
@@ -126,8 +126,8 @@ var app = new Vue({
                 ],
             },
             {
-                name: 'Luisa',
-                avatar: '_4',
+                name: 'Babbo',
+                avatar: '_8',
                 visible: true,
                 messages: [{
                         date: '10/01/2020 15:30:55',
@@ -141,54 +141,8 @@ var app = new Vue({
                     }
                 ],
             },
-            {
-                name: 'Luisa',
-                avatar: '_4',
-                visible: true,
-                messages: [{
-                        date: '10/01/2020 15:30:55',
-                        text: 'Lo sai che ha aperto una nuova pizzeria?',
-                        status: 'sent'
-                    },
-                    {
-                        date: '10/01/2020 15:50:00',
-                        text: 'Si, ma preferirei andare al cinema',
-                        status: 'received'
-                    }
-                ],
-            },
-            {
-                name: 'Luisa',
-                avatar: '_4',
-                visible: true,
-                messages: [{
-                        date: '10/01/2020 15:30:55',
-                        text: 'Lo sai che ha aperto una nuova pizzeria?',
-                        status: 'sent'
-                    },
-                    {
-                        date: '10/01/2020 15:50:00',
-                        text: 'Si, ma preferirei andare al cinema',
-                        status: 'received'
-                    }
-                ],
-            },
-            {
-                name: 'Luisa',
-                avatar: '_4',
-                visible: true,
-                messages: [{
-                        date: '10/01/2020 15:30:55',
-                        text: 'Lo sai che ha aperto una nuova pizzeria?',
-                        status: 'sent'
-                    },
-                    {
-                        date: '10/01/2020 15:50:00',
-                        text: 'Si, ma preferirei andare al cinema',
-                        status: 'received'
-                    }
-                ],
-            },
+
+
         ],
     },
     methods: {
@@ -220,7 +174,7 @@ var app = new Vue({
             const newMessage = this.newMessage.trim();
             if (newMessage) {
                 const newMessageObject = {
-                    date: this.getDate(),
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                     text: newMessage,
                     status: 'sent'
                 }
@@ -231,7 +185,7 @@ var app = new Vue({
             setTimeout(() => {
 
                 const answer = {
-                    date: this.getDate(),
+                    date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                     text: "Ok",
                     status: "received",
                 };
