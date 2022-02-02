@@ -240,6 +240,12 @@ var app = new Vue({
             }, 3000);
         },
 
+        //    filtro alla ricerca
+        searchContact() {
+            const search = this.search.toLowerCase();
+            console.log(search)
+
+        },
 
     },
 
