@@ -67,14 +67,17 @@
                         </section>
 
                         <!-- Contatti -->
-                        <section id="contacts" class="row bgc-white align-content-start">
+                        <section @click="lastMessage()" id="contacts" class="row bgc-white align-content-start">
                             <div v-for="(contact, index) in contacts" class="col-12 d-flex align-items-center py-2" @click="actualContact(index)" :class="{active: isActive(index)}" v-if="contact.visible">
                                 <div class="user circle">
                                     <img alt="userpic" :src="'img/avatar' + contact.avatar + '.jpg'" class="img-fluid userpic">
                                 </div>
                                 <div class="col-6 d-flex flex-column">
                                     <span class="fw-bold ps-3 fs-5 align-self-start">{{contact.name}}</span>
-                                    <span class=" ps-3  ">{{contact.message}}</span>
+                                    <span class=" ps-3  ">{{contact.messages[contact.messages.length -
+                                        1].text}}</span>
+                                    <span class=" fs-12px ps-3  ">{{contact.messages[contact.messages.length -
+                                        1].date}}</span>
                                 </div>
                             </div>
                         </section>
