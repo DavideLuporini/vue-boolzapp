@@ -208,9 +208,17 @@ var app = new Vue({
                     element.visible = true;
                 }
             });
-
         },
 
+        // display last message in contacts
+        lastMessage() {
+            let lastItem = this.contacts[this.currentContact].messages;
+            let lastItemReal = lastItem.length - 1;
+            let textDisplayed = this.contacts[this.currentContact].messages[lastItemReal].text;
+            console.log(lastItem);
+            console.log(textDisplayed);
+            console.log(lastItemReal);
+            console.log(this.currentContact)
+        }
     },
-
 })

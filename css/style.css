@@ -144,6 +144,24 @@ body {
     color: #8edafc;
 }
 
-.not-visible {
-    display: none;
+span .fa-chevron-down {
+    opacity: 0.5;
 }
+
+#chevron-icon {
+    right: 3px;
+    top: 3px;
+}
+
+.dropdown {
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.right {
+    right: 15px;
+}
+
+left {}
